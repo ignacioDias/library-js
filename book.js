@@ -76,9 +76,5 @@ function empty_books() {
     books = new Map();
 }
 document.addEventListener("DOMContentLoaded", () => {
-    add_book_to_library(new Book("Cien años de soledad", "Gabriel García Márquez", 417, true));
-    add_book_to_library(new Book("1984", "George Orwell", 328, false));
-    add_book_to_library(new Book("El Principito", "Antoine de Saint-Exupéry", 96, true));
-    add_book_to_library(new Book("Don Quijote de la Mancha", "Miguel de Cervantes", 863, false));
     display_all();
 });
