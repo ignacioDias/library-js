@@ -27,8 +27,11 @@ $form.onsubmit = function(e) {
     const $title = document.getElementById("title").value;
     const $author = document.getElementById("author").value;
     const $pages = document.getElementById("pages").value;
-    const $finished = document.getElementById("finished").value;
-
+    let $finished = document.getElementById("finished").value;
+    if($finished == "yes")
+        $finished = true
+    else
+        $finished = false;
     $pop_up.style.display = "none";
     $pop_up_success.style.display = "block";
     $form.reset();
